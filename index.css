@@ -54,6 +54,7 @@ canvas {
   height: 100%;
   cursor: crosshair;
   display: none;
+  z-index: 1;
 }
 
 #crop-overlay.active {
@@ -66,6 +67,7 @@ canvas {
   box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.4);
   pointer-events: none;
   display: none;
+  z-index: 2;
 }
 
 .row {
@@ -131,17 +133,36 @@ hr {
 }
 
 #crop-actions {
+  position: relative;
+  z-index: 10;
   display: none;
   font-size: 0.82rem;
   margin-top: 6px;
 }
 
 #crop-actions button {
-  padding: 4px 12px;
+  padding: 8px 16px;
+  margin-bottom: 18px;
+  border: 1px solid #222;
+  background: #222;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
   cursor: pointer;
-  margin-right: 6px;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+#crop-actions button:hover {
+  transform: translateY(-1px);
+  background: #333;
 }
 
 #btn-crop.cropping {
+  position: relative;
   font-weight: bold;
+  background: #222;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.16);
+  z-index: 10;
 }
