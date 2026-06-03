@@ -131,12 +131,13 @@ hr {
 
 .filter-btn {
   font-size: 0.8rem;
-  padding: 3px 10px;
+  padding: 10px 10px;
   cursor: pointer;
   margin-right: 4px;
   background-color: var(--bg-surface);
   color: var(--text);
   border: 1px solid var(--border);
+  border-radius: 6px;
 }
 
 .filter-btn:hover {
@@ -157,12 +158,14 @@ hr {
 
 .actions button {
   font-size: 0.82rem;
-  padding: 4px 12px;
+ 
   cursor: pointer;
   margin-right: 6px;
   background-color: var(--bg-surface);
   color: var(--text);
   border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 16px;
 }
 
 .actions button:hover {
@@ -205,4 +208,17 @@ hr {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.16);
   z-index: 10;
+}
+
+/*Responsive adjustments*/
+@media (max-width: 600px){
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .filter-btn {
+    flex: 1 1 45%;
+    margin-bottom: 8px;
+  }
+
 }

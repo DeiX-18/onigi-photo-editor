@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<h1>onigi / photo editor</h1>
-<p class="sub">work in progress — no uploads, runs in the browser</p>
+<h1>Onigi / Photo Editor</h1>
+<p class="sub">Work in progress — no uploads, runs in the browser</p>
 
 <div id="upload-zone" onclick="document.getElementById('file-input').click()">
   <p style="color:#888;font-size:0.9rem;">upload image</p>
@@ -23,34 +23,34 @@
   </div>
 
   <div id="crop-actions">
-    <button onclick="confirmCrop()">apply crop</button>
-    <button onclick="cancelCrop()">cancel</button>
+    <button onclick="confirmCrop()">Apply crop</button>
+    <button onclick="cancelCrop()">Cancel</button>
   </div>
 
-  <div class="row"><label>brightness</label><input type="range" id="brightness" min="0" max="200" value="100"/><span class="val" id="val-brightness">100</span></div>
-  <div class="row"><label>contrast</label><input type="range" id="contrast" min="0" max="200" value="100"/><span class="val" id="val-contrast">100</span></div>
-  <div class="row"><label>saturation</label><input type="range" id="saturation" min="0" max="200" value="100"/><span class="val" id="val-saturation">100</span></div>
-  <div class="row"><label>blur</label><input type="range" id="blur" min="0" max="10" value="0"/><span class="val" id="val-blur">0</span></div>
-  <div class="row"><label>grayscale</label><input type="range" id="grayscale" min="0" max="100" value="0"/><span class="val" id="val-grayscale">0</span></div>
-  <div class="row"><label>sepia</label><input type="range" id="sepia" min="0" max="100" value="0"/><span class="val" id="val-sepia">0</span></div>
+  <div class="row"><label>Brightness</label><input type="range" id="brightness" min="0" max="200" value="100"/><span class="val" id="val-brightness">100</span></div>
+  <div class="row"><label>Contrast</label><input type="range" id="contrast" min="0" max="200" value="100"/><span class="val" id="val-contrast">100</span></div>
+  <div class="row"><label>Saturation</label><input type="range" id="saturation" min="0" max="200" value="100"/><span class="val" id="val-saturation">100</span></div>
+  <div class="row"><label>Blur</label><input type="range" id="blur" min="0" max="10" value="0"/><span class="val" id="val-blur">0</span></div>
+  <div class="row"><label>Grayscale</label><input type="range" id="grayscale" min="0" max="100" value="0"/><span class="val" id="val-grayscale">0</span></div>
+  <div class="row"><label>Sepia</label><input type="range" id="sepia" min="0" max="100" value="0"/><span class="val" id="val-sepia">0</span></div>
 
   <hr/>
 
   <div class="filters">
     <span>filters:</span>
-    <button class="filter-btn active" data-filter="none">none</button>
-    <button class="filter-btn" data-filter="vintage">vintage</button>
-    <button class="filter-btn" data-filter="cool">cool</button>
-    <button class="filter-btn" data-filter="warm">warm</button>
-    <button class="filter-btn" data-filter="fade">fade</button>
-    <button class="filter-btn" data-filter="dramatic">dramatic</button>
+    <button class="filter-btn active" data-filter="none">None</button>
+    <button class="filter-btn" data-filter="vintage">Vintage</button>
+    <button class="filter-btn" data-filter="cool">Cool</button>
+    <button class="filter-btn" data-filter="warm">Warm</button>
+    <button class="filter-btn" data-filter="fade">Fade</button>
+    <button class="filter-btn" data-filter="dramatic">Dramatic</button>
   </div>
 
   <div class="actions">
-    <button onclick="resetAll()">reset</button>
-    <button onclick="changeImage()">change photo</button>
-    <button id="btn-crop" onclick="toggleCrop()">crop</button>
-    <button onclick="downloadImage()">download</button>
+    <button onclick="resetAll()">Reset</button>
+    <button onclick="changeImage()">Change Photo</button>
+    <button id="btn-crop" onclick="toggleCrop()">Crop</button>
+    <button onclick="downloadImage()">Download</button>
   </div>
 </div>
   <script src="index.js"></script>
